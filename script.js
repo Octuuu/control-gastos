@@ -5,7 +5,6 @@ const expenseCategory = document.getElementById('expenseCategory');
 const expenseList = document.getElementById('expenseList');
 const expenseChart = document.getElementById('expenseChart').getContext("2d");
 
-
 let expenses = JSON.parse(localStorage.getItem('expenses')) || {};
 
 document.addEventListener("DOMContentLoaded", () => {
