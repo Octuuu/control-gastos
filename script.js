@@ -14,7 +14,6 @@ document.addEventListener("DOMContentLoaded", () => {
 
 expenseForm.addEventListener("submit", (e) => {
   e.preventDefault();
-
   // crear nuevo gasto
   const newExpense = {
     id : Date.now(),
