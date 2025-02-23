@@ -1,4 +1,3 @@
-
 const expenseForm = document.getElementById('expenseForm');
 const expenseName = document.getElementById('expenseName');
 const expenseAmount = document.getElementById('expenseAmount');
