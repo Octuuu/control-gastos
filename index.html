@@ -8,7 +8,9 @@
   <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 </head>
 <body>
+  
   <div class="expense-manager">
+    
     <h1>Administrador de Gastos</h1>
     <form id="expenseForm">
       <input type="text" id="expenseName" placeholder="Nombre del gasto" required>
@@ -22,10 +24,12 @@
       </select>
       <button type="submit">Agregar Gasto</button>
     </form>
+    
     <div id="expenseListContainer">
       <h2>Lista de Gastos</h2>
       <ul id="expenseList"></ul>
     </div>
+    
     <canvas id="expenseChart" width="400" height="200"></canvas>
   </div>
   <script src="script.js"></script>
