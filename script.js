@@ -7,9 +7,11 @@ const expenseChart = document.getElementById('expenseChart').getContext("2d");
 
 let expenses = JSON.parse(localStorage.getItem('expenses')) || {};
 
+
 document.addEventListener("DOMContentLoaded", () => {
   renderExpenses();
   renderChart();
+  
 });
 
 expenseForm.addEventListener("submit", (e) => {
