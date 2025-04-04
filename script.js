@@ -66,9 +66,11 @@ function renderChart() {
     return expenses
       .filter((expense) => expense.category === category)
       .reduce((total, expense) => total + expense.amount, 0);
+    
   });
 
   new Chart(expenseChart, {
+    
     type: "pie",
     data: {
       labels: categories,
