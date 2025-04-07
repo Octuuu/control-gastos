@@ -56,6 +56,7 @@ function renderExpenses() {
 function deleteExpense(id){
   expenses = expenses.filter((expense) => expense.id !== id);
   localStorage.setItem("expenses", JSON.stringify(expenses));
+  
   renderExpenses();
   renderChart();
 }
@@ -64,6 +65,7 @@ function renderChart() {
   const categories = ["Comida", "Transporte", "Entretenimiento", "Otros"];
   const categoryTotals = categories.map((category) => {
     return expenses
+      
       .filter((expense) => expense.category === category)
       .reduce((total, expense) => total + expense.amount, 0);
     
